@@ -1,0 +1,17 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class takeQuiz {
+    public static void main(String[] args) throws InterruptedException {
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://myobvi.com/");
+
+        WebElement takeQuiz = driver.findElement(By.className("header__menu-item"));
+        takeQuiz.click();
+    }
+}
+
+
+
